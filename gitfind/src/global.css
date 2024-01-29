@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --var-background-color: #1D2128;
+}
+
+body {
+    background-color: var(--var-background-color);
+    
+}
+
+hr {
+    border: 2px solid rgba(229, 229, 229, 0.20);
+    margin: 20px;
+}
+
+.conteudo{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.git-avatar{
+    position: fixed;
+    left: 0;
+    height: 90vh;
+}
+
+.info{
+    width: 90%;
+    z-index: 10;
+}
+
+input {
+    width: 65%;
+    height: 40px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #999;
+    color: #999;
+    padding: 15px;
+    font-family: Kailasa;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10% 10px 0;
+}
+
+button{
+    border-radius: 30px;
+    border: 1px solid #999;
+    background: #2D333B;
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.perfil{
+    display: flex;
+    color: #999;
+    font-family: Kailasa;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 64px;
+    border: 2px solid #E5E5E5;
+    margin: 0 20px 0 0;
+}
+
+.profile-text h3{
+    font-size: 25px;
+}
+
+.profile-text p, span{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+.info h4{
+    color: #FFF;
+    font-family: Kailasa;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.item-list strong{
+    color: #539BF5;
+    font-family: Kailasa;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 20px 20px 0;
+}
+
+.item-list p{
+    color: #999;
+    font-family: Kailasa;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudo{
+        justify-content: flex-end;
+    }
+
+    .git-avatar{
+        position: fixed;
+        left: 0;
+        height: 90vh;
+    }
+
+    .info{
+        width: 60%;
+    }
+
+    input {
+        width: 80%;
+        margin: 10% 20px 0;
+    }
+    button{
+        margin: 10px;
+    }
+}
